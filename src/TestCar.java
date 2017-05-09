@@ -24,5 +24,12 @@ public class TestCar {
 		c.setEngineCapacity(120);
 		assertTrue(c.getEngineCapacity() > 100);
 	}
+	
+	@Test
+	public void testForFalse() {
+		Car c = new Car();
+		c.setEngineCapacity(120);
+		assertTrue(c.getEngineCapacity() < 100);
+	}
 
 }
